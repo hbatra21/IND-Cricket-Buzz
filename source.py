@@ -23,10 +23,8 @@ while True:
           quit()
        ls =  functions.sms(username,password)               
        if ls.send(toMob,msg) == False:
-           print("sms nai gya")
            functions.time.sleep(60)
            continue
        else:
-           print("sent!!!! sleeping...")
            functions.time.sleep(600)
           
